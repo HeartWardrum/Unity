@@ -46,3 +46,17 @@
   - `transform.localScale;`
 
 物体移动根据自己的父物体决定 
+
+## Time.deltaTime
+
+deltaTime 增量时间
+
+Update函数是每帧执行一次，那么经过一帧耗费的时间就是**增量时间**
+
+1秒内Update执行的次数，就是一秒内执行的总帧数
+
+Update1秒内执行了1次，`transform.Translate(0, 0, 1/60 \* 10)`执行一次，物体移动了1/6米
+
+Update1秒内执行了60次，就是`transform.Translate(0, 0, Time.deltaTime * 10)`乘以60次
+
+相当于 =（每帧时间 \* 速度 \* 每秒几帧）=10米
