@@ -60,3 +60,20 @@ Update1秒内执行了1次，`transform.Translate(0, 0, 1/60 \* 10)`执行一次
 Update1秒内执行了60次，就是`transform.Translate(0, 0, Time.deltaTime * 10)`乘以60次
 
 相当于 =（每帧时间 \* 速度 \* 每秒几帧）=10米
+
+## OnCollisionEnter
+
+经过测试： OnCollisionEnter方法被触发要符合以下条件：
+
+> 1 碰撞双方必须是碰撞体
+> 2 碰撞的主动方必须是刚体，注意我的用词是主动方，而不是被动方
+> 3 刚体不能勾选IsKinematic
+> 4 碰撞体不能够勾选IsTigger
+
+注意OnCollisionEnter方法的形参对象指的是碰撞双方中没有携带OnCollisionEnter方法的一方
+
+## Collision.gameObject
+
+您正在碰撞其碰撞体的GameObject（只读）
+
+这是正在与您 GameObject 碰撞的 GameObject。访问它，以检查正在碰撞的 GameObject 的属性，例如 GameObject 的名称和标记
