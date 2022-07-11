@@ -69,10 +69,17 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 - 当 `t` = 1 时，返回 `b` 
 - 当 `t` = 0.5 时，返回 `a` 和 `b` 的中点      
 
-## Input.GetKeyDown
+## 5. Input.GetKeyDown
 
 `public static bool GetKeyDown(string name);`     
 
 在用户开始按下 `name` 标识的键的帧期间返回 true。
 
 在Update方法中调用它，因为它的状态每帧都会重置；在用户释放按键并再次按下它之前，它不会返回true
+
+## 6. Animator.CrossFade()
+
+`Animator.CrossFade(状态名称,过渡的持续时间)`
+
+
+
