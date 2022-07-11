@@ -79,7 +79,9 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 
 ## 6. Animator.CrossFade()
 
-`Animator.CrossFade(状态名称,过渡的持续时间)`
+使用标准化时间创建从当前状态到任何其他状态的淡入淡出效果。
+
+`Animator.CrossFade(string 状态名称,float 过渡的持续时间)`
 
 
 
