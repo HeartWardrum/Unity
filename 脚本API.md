@@ -1,4 +1,4 @@
-## 1. RigidBody.MovePosition
+## 1.RigidBody.MovePosition
 
 ~~~~C#
 public void MovePosition (Vector3 position);
@@ -8,7 +8,7 @@ public void MovePosition (Vector3 position);
 rigidBody.MovePosition(transform.position + transform.forward * Time.fixedDeltaTime * moveSpeed * inputV);
 ~~~~
 
-## 2. Input.GetAxis()
+## 2.Input.GetAxis()
 
 `public static float GetAxis(string axisName);`      
 
@@ -26,7 +26,7 @@ rigidBody.MovePosition(transform.position + transform.forward * Time.fixedDeltaT
     }
 ~~~
 
-## 3. Transform.eulerAngles
+## 3.Transform.eulerAngles
 
 `public Vector3 eulerAngles`
 
@@ -46,7 +46,7 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 
  若要避免这些类型的问题，使用旋转的建议方式是避免在读取 .eulerAngles 时依赖一致的结果，特别是在尝试逐渐增加旋转以生成动画时。
 
-## 4. Mathf.Lerp
+## 4.Mathf.Lerp
 
 `public static float Lerp(float a,float b,float t);`
 
@@ -69,7 +69,7 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 - 当 `t` = 1 时，返回 `b` 
 - 当 `t` = 0.5 时，返回 `a` 和 `b` 的中点      
 
-## 5. Input.GetKeyDown
+## 5.Input.GetKeyDown
 
 `public static bool GetKeyDown(string name);`     
 
@@ -77,7 +77,7 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 
 在Update方法中调用它，因为它的状态每帧都会重置；在用户释放按键并再次按下它之前，它不会返回true
 
-## 6. Animator.CrossFade()
+## 6.Animator.CrossFade()
 
 使用标准化时间创建从当前状态到任何其他状态的淡入淡出效果。
 
@@ -91,7 +91,7 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 
 `byte[] _length = BitConverter.GetBytes(int型参数)`
 
-## 8. Array.Copy(Array,Int32,Array,Int32,Int32)
+## 8.Array.Copy(Array,Int32,Array,Int32,Int32)
 
 复制 Array中的一系列元素（从指定的源索引开始），并将它们粘贴到另一Array中（从指定的目标索引开始）。 长度和索引指定为 32 位整数。
 
