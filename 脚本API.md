@@ -91,3 +91,40 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 
 `byte[] _length = BitConverter.GetBytes(int型参数)`
 
+## 8. Array.Copy(Array,Int32,Array,Int32,Int32)
+
+复制 Array中的一系列元素（从指定的源索引开始），并将它们粘贴到另一Array中（从指定的目标索引开始）。 长度和索引指定为 32 位整数。
+
+~~~Csharp
+1. sourceArray   Array 
+包含要复制的数据的 Array。
+    
+2. sourceIndex    Int32 
+一个 32 位整数，它表示 sourceArray 中复制开始处的索引。
+
+3. destinationArray    Array 
+接收数据的 Array。
+    
+4. destinationIndex	Int32 
+一个 32 位整数，它表示 destinationArray 中存储开始处的索引。
+    
+5. length	Int32 
+一个 32 位整数，它表示要复制的元素数目。
+~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
