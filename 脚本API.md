@@ -85,17 +85,39 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 
 ## 7.BitConverter.GetBytes()
 
-将字节数组转化为一个基数据格式
+将基数据格式转化为一个字节数组
 
 例如：
 
 `byte[] _length = BitConverter.GetBytes(int型参数)`
 
-## 8.Array.Copy(Array,Int32,Array,Int32,Int32)
+## 8.BitCOnverter.ToInt32()
+
+将字节数组转化为一个基数据格式
+
+类似的还有`BitConverter.ToInt64`:将byte[] 型转化为 long型
+
+~~~Csharp
+//参数
+1.value    Byte[] 
+包含要转换的四个字节的字节数组。
+
+2.startIndex   Int32 
+value 内的起始位置。
+    
+//返回
+Int32
+由四个字节构成、从 startIndex 开始的 32 位有符号整数。
+~~~
+
+
+
+## 9.Array.Copy(Array,Int32,Array,Int32,Int32)
 
 复制 Array中的一系列元素（从指定的源索引开始），并将它们粘贴到另一Array中（从指定的目标索引开始）。 长度和索引指定为 32 位整数。
 
 ~~~Csharp
+//参数
 1. sourceArray   Array 
 包含要复制的数据的 Array。
     
