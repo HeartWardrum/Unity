@@ -85,9 +85,9 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 
 ## 7.BitConverter.GetBytes()
 
-将基数据类型转换为一个字节数组
+将字节数组转化为一个基数据格式
 
 例如：
 
-`int _length = BitConverter.GetBytes(byte[]型参数)`
+`byte[] _length = BitConverter.GetBytes(int型参数)`
 
