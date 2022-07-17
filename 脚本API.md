@@ -83,5 +83,11 @@ Transform.eulerAngles表示世界空间中的旋转。在检视面板中查看 G
 
 `Animator.CrossFade(string 状态名称,float 过渡的持续时间)`
 
+## 7.BitConverter.GetBytes()
 
+将基数据类型转换为一个字节数组
+
+例如：
+
+`int _length = BitConverter.GetBytes(byte[]型参数)`
 
