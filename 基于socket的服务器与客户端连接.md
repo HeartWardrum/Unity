@@ -1,4 +1,4 @@
-## 简单连接
+## TCP
 
 ~~~Csharp
 //服务器端
@@ -142,5 +142,26 @@ namespace Tcp客户端
         }
     }
 }
+~~~
+
+## UDP
+
+### ref
+
+传入参数的前面加上ref后，如果方法对参数进行了修改，会直接影响方法外该参数的值
+
+~~~Csharp
+		//比如
+        static void Main(string[] args)
+        {
+            int a = 0;
+            Test(ref a);
+            Console.WriteLine("a = " + a);//输出 a = 1
+        }
+
+        static void Test(ref int a)
+        {
+            a += 1;
+        }
 ~~~
 
